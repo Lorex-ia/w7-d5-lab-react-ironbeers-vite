@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function RandomBeer() {
   return (
-    <div>RandomBeer</div>
+    <>
+        <Navbar/>
+        Random Beers
+    </>
   )
 }
 

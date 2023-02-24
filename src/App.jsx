@@ -3,7 +3,6 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import './App.css'
 import AllBeers from './components/AllBeers'
 import Home from './components/Home'
-import Navbar from './components/Navbar'
 import RandomBeer from './components/RandomBeer'
 
 function App() {

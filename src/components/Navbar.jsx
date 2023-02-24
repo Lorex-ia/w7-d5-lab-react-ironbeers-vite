@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav>
-        <ul>
-
-        </ul>
+    <nav >
+      <Link to="/" style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+        <img src="../../src/assets/home.png" alt="home" />
+      </Link>
     </nav>
   )
 }
