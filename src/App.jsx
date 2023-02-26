@@ -1,9 +1,12 @@
-import { useState } from 'react'
-import { Route, BrowserRouter, Routes } from 'react-router-dom'
+
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import AllBeers from './components/AllBeers'
+import BeerDetails from './components/BeerDetails'
+import Beers from './components/Beers'
 import Home from './components/Home'
+import NewBeer from './components/NewBeer'
 import RandomBeer from './components/RandomBeer'
+
 
 function App() {
 
@@ -12,9 +15,10 @@ function App() {
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home /> } />
-        <Route path="/allbeers" element={<AllBeers /> } />
-        <Route path="/:id" element={<AllBeers /> } />
+        <Route path="/beers" element={<Beers /> } />
+        <Route path="/:_id" element={<BeerDetails /> } />
         <Route path="/random" element={<RandomBeer /> } />
+        <Route path="/new-beer" element={<NewBeer /> } />
         <Route path="/search?q={query}" element={<RandomBeer /> } />
       </Routes>
     </div>
